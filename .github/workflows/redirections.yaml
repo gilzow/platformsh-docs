@@ -45,6 +45,13 @@ jobs:
         with:
           environment-url: ${{ needs.get_pr_url.outputs.up_url }}
 
+  check-alt-id:
+    name: Checks repo id in an alt way
+    runs-on: ubuntu-latest
+    if: github.event.workflow_run.head_repository.id == 627626095
+    steps:
+      - run: |
+          echo "OMG did we finally find a replacement way to get the ID??!"
   check-id:
     name: checks repo id
     runs-on: ubuntu-latest
