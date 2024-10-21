@@ -1,7 +1,7 @@
 name: Contracted Redirections Verification
 on:
   workflow_run:
-    workflows: [ Get info on PR ]
+    workflows: [ Get-info-on-PR ]
     types:
       - completed
   workflow_dispatch:
@@ -52,3 +52,4 @@ jobs:
     steps:
       - run: |
           echo "::notice::The repo id isn't 627626095 but instead is ${{ github.event.pull_request.head.repo.id }}"
+
