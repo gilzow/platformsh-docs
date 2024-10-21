@@ -21,7 +21,7 @@ jobs:
     if: >-
       (github.event.action == 'opened' ||
       github.event.action== 'reopened') &&
-      github.event.pull_request.head.repo.id == 21975579
+      github.event.pull_request.head.repo.id == 627626095
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -57,7 +57,7 @@ jobs:
     if: >-
       github.event.action == 'closed' &&
       github.event.pull_request.merged == false &&
-      github.event.pull_request.head.repo.id == 21975579
+      github.event.pull_request.head.repo.id == 627626095
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -75,7 +75,7 @@ jobs:
     # Delete branch when a PR is closed
     if: >-
       github.event.action == 'closed' &&
-      github.event.pull_request.head.repo.id != 21975579 &&
+      github.event.pull_request.head.repo.id != 627626095 &&
       contains(github.event.pull_request.labels.*.name, 'build-fork')
     steps:
       - name: Checkout repository
