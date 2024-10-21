@@ -1,7 +1,7 @@
 name: runs E2E tests
 on:
   workflow_run:
-    workflows: [Get info on PR]
+    workflows: [Get-info-on-PR]
     types:
       - completed
 
