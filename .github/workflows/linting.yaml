@@ -9,7 +9,7 @@ jobs:
     name: Lint markdown
     if: >-
       (
-        github.event.pull_request.head.repo.id == 21975579 ||
+        github.event.pull_request.head.repo.id == 627626095 ||
         contains(github.event.pull_request.labels.*.name, 'build-fork')
       ) &&
       contains(github.event.pull_request.labels.*.name, vars.LBL_MRKDWNPROSE)
@@ -38,7 +38,7 @@ jobs:
     name: Lint Prose
     if: >-
       (
-        github.event.pull_request.head.repo.id == 21975579 ||
+        github.event.pull_request.head.repo.id == 627626095 ||
         contains(github.event.pull_request.labels.*.name, 'build-fork')
       ) &&
       contains(github.event.pull_request.labels.*.name, vars.LBL_MRKDWNPROSE)
