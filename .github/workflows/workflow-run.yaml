@@ -1,0 +1,16 @@
+name: workflow run info
+on:
+  workflow_run:
+    workflows: [Get-info-on-PR]
+    types:
+      - completed
+
+jobs:
+  check-id:
+    name: checks workflow run event inf
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::notice::GitHub Event Data"
+          export POSEVENT="${{ toJson(github.event) }}"
+          echo "${POSEVENT}"
