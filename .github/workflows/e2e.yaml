@@ -15,7 +15,7 @@ jobs:
       up_url:  ${{ steps.retrieve-url.outputs.up_url }}
     steps:
       - name: Download info on PR
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           workflow: get-pr-info.yaml
           workflow_conclusion: completed
