@@ -1,10 +1,11 @@
 name: runs E2E tests
 on:
-  workflow_run:
-    workflows: [Get-info-on-PR]
-    types:
-      - completed
-
+#  workflow_run:
+#    workflows: [Get-info-on-PR]
+#    types:
+#      - completed
+  workflow_dispatch:
+    
 jobs:
   setup_matrix:
     name: Setup E2E Matrix
