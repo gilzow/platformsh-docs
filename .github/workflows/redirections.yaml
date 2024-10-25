@@ -1,9 +1,9 @@
 name: Contracted Redirections Verification
 on:
-  workflow_run:
-    workflows: [ Get-info-on-PR ]
-    types:
-      - completed
+#  workflow_run:
+#    workflows: [ Get-info-on-PR ]
+#    types:
+#      - completed
   workflow_dispatch:
     inputs:
       environ-url:
@@ -35,15 +35,15 @@ jobs:
           UP_URL="https://docs.upsun.com.${PSH_URL:8}"
           echo "UP URL is ${UP_URL}"
           echo "up_url=$UP_URL" >> $GITHUB_OUTPUT
-  redirections:
-    needs:
-      - get_pr_url
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/redirection-verification
-        with:
-          environment-url: ${{ needs.get_pr_url.outputs.up_url }}
+#  redirections:
+#    needs:
+#      - get_pr_url
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v4
+#      - uses: ./.github/actions/redirection-verification
+#        with:
+#          environment-url: ${{ needs.get_pr_url.outputs.up_url }}
 
 #  check-alt-id:
 #    name: Checks repo id in an alt way
