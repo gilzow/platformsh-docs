@@ -289,12 +289,15 @@ jobs:
             url: ${{ needs.get_pr_info.outputs.pr_url_upsun }}
     steps:
       - uses: actions/checkout@v4
+        if: github.event.pull_request.head.repo.id == 627626095
         with:
-          # we need to checkout the PR repo/branch even if it's a fork because the action in the next step needs to
-          # retrieve the contracted redirections from .platform/routes.yaml. This may change in the future if we
-          # switch to using a redirection service. Actions DO NOT have access to secrets.
+          # If this is the base repo, then we want to check out the PR branch so we can potentially run new tests/changes
+          # that are included in the PR.
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/checkout@v4
+        # if it isn't the base repo and we're in a fork then we'll checkout the base repo
+        if: github.event.pull_request.head.repo.id != 627626095 && contains(github.event.pull_request.labels.*.name, 'build-fork')
       - uses: cypress-io/github-action@v6
         with:
           wait-on: ${{ matrix.url }}
