@@ -30,7 +30,7 @@ jobs:
         id: branch_name
         run: |
           # For PRs from non-forked repos
-          if [ ${{ github.event.pull_request.head.repo.id }} == vars.THIS_REPO_ID ]; then
+          if [ ${{ github.event.pull_request.head.repo.id }} == ${{ vars.THIS_REPO_ID }} ]; then
             branch_name="${{ github.event.pull_request.head.ref }}"
 
           # For PRs from forks
