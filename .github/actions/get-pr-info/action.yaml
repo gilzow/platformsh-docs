@@ -71,10 +71,10 @@ runs:
         done
 
         # Get the URL of the environment
-        ENV_URL=$(platform url --primary --pipe --environment ${{ steps.branch_name.outputs.branch_name }})
+        ENV_URL=$(platform url --primary --pipe --environment "${BRANCH}")
 
         # Get the status of the build activity
-        COMMIT_STATUS=$(platform activities --format plain --type "environment.push environment.activate environment.redeploy environment.branch" --no-header --columns "result" --limit 1 --environment ${{ steps.branch_name.outputs.branch_name }})
+        COMMIT_STATUS=$(platform activities --format plain --type "environment.push environment.activate environment.redeploy environment.branch" --no-header --columns "result" --limit 1 --environment "${BRANCH}")
 
         # Report findings
         echo "The Platform.sh environment is:"
