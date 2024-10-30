@@ -22,7 +22,7 @@ jobs:
 
     steps:
       # at this point we want to checkout the repository but at the latest commit of the default branch
-      - uses: action/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set branch name
         id: branch_name
