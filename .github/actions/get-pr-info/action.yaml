@@ -10,9 +10,15 @@ inputs:
 
 ####
 outputs:
-  env_status: ${{ steps.get_env_url.outputs.env_status }}
-  pr_url: ${{ steps.get_env_url.outputs.env_url }}
-  pr_url_upsun: ${{ steps.get_env_url.outputs.env_url_upsun }}
+  env_status:
+    description: "Final status of the PR environment"
+    value: ${{ steps.get_env_url.outputs.env_status }}
+  pr_url:
+    description: "The URL of the PR environment"
+    value: ${{ steps.get_env_url.outputs.env_url }}
+  pr_url_upsun:
+    description: "The URL of the Upsun variant of the PR environment"
+    value: ${{ steps.get_env_url.outputs.env_url_upsun }}
 
 
 runs:
