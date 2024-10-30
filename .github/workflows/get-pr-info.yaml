@@ -21,10 +21,8 @@ jobs:
       pr_url_upsun: ${{ steps.get_env_url.outputs.env_url_upsun }}
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.sha }}
+      # at this point we want to checkout the repository but at the latest commit of the default branch
+      - uses: action/checkout@v4
 
       - name: Set branch name
         id: branch_name
@@ -40,68 +38,17 @@ jobs:
           echo "::notice::Setting branch name to ${branch_name}."
           echo "branch_name=${branch_name}" >> $GITHUB_OUTPUT
 
-      # Set up workflow environment to use the Platform.sh CLI
-      - name: Set up Platform.sh CLI
-        uses: ./.github/actions/set-up-cli
-
-      # Get the URL for the deployed environment
-      - name: Get environment URL
-        env:
-          PLATFORMSH_CLI_TOKEN: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
+      - name: retrieve PR url
         id: get_env_url
-        run: |
-          COMMIT_STATUS="pending"
+        uses: ./.github/actions/get-pr-info
+        with:
+          platformsh_token: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
+          branch: ${{ steps.branch_name.outputs.branch_name }}
 
-          # Get the state of the most recent deployment activity
-          # run commands in workflows are are automatically launched with shell: /usr/bin/bash -e {0}. If for some
-          # reason the psh cli errors (e.g. branch hasn't reached psh and therefore doesnt exist, api times out, etc)
-          # this will cause our workflow to exit. Instead, call the cli with an | true so we can attempt to query again
-          STATE=$(platform activities --format plain --type "environment.push environment.activate environment.redeploy environment.branch" --no-header --columns "state" --limit 1 --environment ${{ steps.branch_name.outputs.branch_name }} || true)
-          echo "::notice::Attempting to retrieve deployed environment URL. Current state is: ${STATE}"
-          # Set tries to 0 to start countdown to timeout
-          STATUS_TRY=1
-          # We'll try up to 20 minutes, so (SLEEP_TIME*NUM_ATTEMPTS)/60 = 10*
-          SLEEP_TIME=10
-          NUM_ATTEMPTS=120
-
-          # Wait until state is complete or 20 minutes has passed
-          until [ "${STATE}" = "complete" ] || [ ${STATUS_TRY} = ${NUM_ATTEMPTS} ]; do
-            sleep ${SLEEP_TIME}
-            echo "::notice::Environment is not deployed. Attempting to retrieve deployed status. Attempt ${STATUS_TRY} of ${NUM_ATTEMPTS}."
-            STATE=$(platform activities --format plain --type "environment.push environment.activate environment.redeploy environment.branch" --no-header --columns "state" --limit 1 --environment ${{ steps.branch_name.outputs.branch_name }} || true)
-            echo "::notice::Status retrieved: ${STATE}"
-
-            if [ "${STATE}" = "complete" ]; then
-              echo "::notice::Activity is complete."
-            fi
-
-            # we want to clear the cli cache every 3rd attempt in case it is caching too heavily
-            if [ $(expr ${STATUS_TRY} % 3) = 0 ]; then
-              echo "Clearing the cli cache..."
-              platform clear-cache
-            fi
-
-            STATUS_TRY=$((++STATUS_TRY))
-          done
-
-          # Get the URL of the environment
-          ENV_URL=$(platform url --primary --pipe --environment ${{ steps.branch_name.outputs.branch_name }})
-
-          # Get the status of the build activity
-          COMMIT_STATUS=$(platform activities --format plain --type "environment.push environment.activate environment.redeploy environment.branch" --no-header --columns "result" --limit 1 --environment ${{ steps.branch_name.outputs.branch_name }})
-
-          # Report findings
-          echo "The Platform.sh environment is:"
-          echo "$COMMIT_STATUS"
-          if [ "$COMMIT_STATUS" = "success" ]; then
-            echo "Environment deployed to:"
-            echo "$ENV_URL"
-          fi
-
-          # Report the final statuses to be used in future jobs
-          echo "env_status=$COMMIT_STATUS" >> $GITHUB_OUTPUT
-          echo "env_url=$ENV_URL" >> $GITHUB_OUTPUT
-          echo "env_url_upsun=${{ env.UPSUN_DOCS_PREFIX }}.${ENV_URL:8}" >> $GITHUB_OUTPUT
+#      - uses: actions/checkout@v4
+#        with:
+#          fetch-depth: 0
+#          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Make artifact files
         run: |
