@@ -54,7 +54,7 @@ runs:
         until [ "${STATE}" = "complete" ] || [ ${STATUS_TRY} = ${NUM_ATTEMPTS} ]; do
           sleep ${SLEEP_TIME}
           echo "::notice::Environment is not deployed. Attempting to retrieve deployed status. Attempt ${STATUS_TRY} of ${NUM_ATTEMPTS}."
-          STATE=$(platform activities --format plain --type "environment.push environment.activate environment.redeploy environment.branch" --no-header --columns "state" --limit 1 --environment ${{ steps.branch_name.outputs.branch_name }} || true)
+          STATE=$(platform activities --format plain --type "environment.push environment.activate environment.redeploy environment.branch" --no-header --columns "state" --limit 1 --environment "${BRANCH}" || true)
           echo "::notice::Status retrieved: ${STATE}"
 
           if [ "${STATE}" = "complete" ]; then
