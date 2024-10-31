@@ -17,8 +17,8 @@ jobs:
     # Run only for PRs from default repo and approved PRs from forks
     if: github.event.pull_request.head.repo.id == vars.THIS_REPO_ID || contains(github.event.pull_request.labels.*.name, 'build-fork')
     outputs:
-      pr_url: ${{ steps.get_env_url.outputs.env_url }}
-      pr_url_upsun: ${{ steps.get_env_url.outputs.env_url_upsun }}
+      pr_url: ${{ steps.get_env_url.outputs.pr_url }}
+      pr_url_upsun: ${{ steps.get_env_url.outputs.pr_url_upsun }}
 
     steps:
       # at this point we want to checkout the repository but at the latest commit of the default branch
