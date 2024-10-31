@@ -13,7 +13,7 @@ showTitle: false
 
 <!-- vale off -->
 
-# Upsun CLI 5.0.15
+# Upsun CLI 5.0.22
 
 - [Installation](/administration/cli#1-install)
 - [Open an issue](https://github.com/platformsh/cli/issues)
@@ -273,11 +273,14 @@ upsun cc
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -308,11 +311,14 @@ upsun decode [-P|--property PROPERTY] [--] <value>
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -353,11 +359,14 @@ upsun docs [--browser BROWSER] [--pipe] [--] [<search>]...
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -408,11 +417,14 @@ To display the list of available commands, please use the list command.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -468,11 +480,14 @@ It's also possible to get raw list of commands (useful for embedding command run
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -512,11 +527,14 @@ upsun multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -558,11 +576,14 @@ upsun web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -605,11 +626,14 @@ upsun activity:cancel [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [-a|--al
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -676,11 +700,14 @@ upsun activity:get [-P|--property PROPERTY] [-t|--type TYPE] [-x|--exclude-type 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -759,11 +786,14 @@ upsun activities [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMI
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -856,11 +886,14 @@ upsun activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [-x|--exc
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -918,11 +951,14 @@ upsun app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1004,11 +1040,14 @@ upsun apps [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRON
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1039,11 +1078,14 @@ Alternatively, to log in to the CLI with a browser, run:
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1097,11 +1139,14 @@ UPSUN_CLI_TOKEN environment variable.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1147,11 +1192,14 @@ upsun auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1199,11 +1247,14 @@ upsun logout [-a|--all] [--other]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1226,11 +1277,14 @@ upsun auth:verify-phone-number
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1275,11 +1329,14 @@ upsun backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1336,11 +1393,14 @@ upsun backup:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1380,11 +1440,14 @@ upsun backup:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environme
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1427,11 +1490,14 @@ upsun backups [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1453,7 +1519,7 @@ Restore an environment backup
 ### Usage
 
 ```
-upsun backup:restore [--target TARGET] [--branch-from BRANCH-FROM] [--no-code] [--resources-init RESOURCES-INIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<backup>]
+upsun backup:restore [--target TARGET] [--branch-from BRANCH-FROM] [--no-code] [--no-resources] [--resources-init RESOURCES-INIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<backup>]
 ```
 
 #### Arguments
@@ -1472,8 +1538,11 @@ upsun backup:restore [--target TARGET] [--branch-from BRANCH-FROM] [--no-code] [
 * `--no-code`
   Do not restore code, only data.
 
+* `--no-resources`
+  Do not override the target's existing resource settings.
+
 * `--resources-init` (expects a value)
-  Set the resources to use for new services: parent, default or minimum. If not set, "parent" will be used.
+  Set the resources to use for new services: backup, parent, default or minimum. If not set, "backup" will be used.
 
 * `--project` (`-p`) (expects a value)
   The project ID or URL
@@ -1490,11 +1559,14 @@ upsun backup:restore [--target TARGET] [--branch-from BRANCH-FROM] [--no-code] [
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1547,11 +1619,14 @@ upsun certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PR
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1588,11 +1663,14 @@ upsun certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1629,11 +1707,14 @@ upsun certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--proje
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1700,11 +1781,14 @@ upsun certificates [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1751,11 +1835,14 @@ upsun commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environme
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1828,11 +1915,14 @@ upsun commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONME
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1909,11 +1999,14 @@ upsun db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -1973,11 +2066,14 @@ upsun sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENV
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2046,11 +2142,14 @@ upsun domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [--attach ATTACH] [-p
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2102,11 +2201,14 @@ upsun domain:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2162,11 +2264,14 @@ upsun domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMN
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2206,11 +2311,14 @@ upsun domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--proje
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2259,11 +2367,14 @@ upsun domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJ
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2316,11 +2427,14 @@ upsun environment:activate [--parent PARENT] [--resources-init RESOURCES-INIT] [
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2387,11 +2501,14 @@ upsun branch [--title TITLE] [--type TYPE] [--no-clone-parent] [--no-checkout] [
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2428,11 +2545,14 @@ upsun checkout [<id>]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2521,11 +2641,14 @@ This command allows you to delete environments as well as their Git branches.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2586,11 +2709,14 @@ upsun drush [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2658,11 +2784,14 @@ upsun httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--proje
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2742,11 +2871,14 @@ upsun environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|-
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2826,11 +2958,14 @@ upsun environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environm
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2888,11 +3023,14 @@ upsun environments [-I|--no-inactive] [--status STATUS] [--pipe] [--refresh REFR
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -2943,11 +3081,14 @@ upsun log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVI
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3016,11 +3157,14 @@ This command will initiate a Git merge of the specified environment into its par
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3066,11 +3210,14 @@ The environment will be unavailable until it is resumed. No data will be lost.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3139,11 +3286,14 @@ upsun push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstrea
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3197,11 +3347,14 @@ upsun redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wa
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3246,11 +3399,14 @@ upsun relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3302,11 +3458,14 @@ upsun environment:resume [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3354,11 +3513,14 @@ upsun scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3434,11 +3596,14 @@ upsun ssh [--pipe] [--all] [-o|--option OPTION] [-p|--project PROJECT] [-e|--env
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3522,11 +3687,14 @@ will be used for all corresponding apps and services in the child environment.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3583,11 +3751,14 @@ upsun url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3652,11 +3823,14 @@ upsun xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3715,11 +3889,14 @@ upsun integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3788,11 +3965,14 @@ upsun integration:activities [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--l
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -3835,11 +4015,14 @@ upsun integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--pro
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4003,11 +4186,14 @@ upsun integration:add [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBU
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4056,11 +4242,14 @@ upsun integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<i
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4103,11 +4292,14 @@ upsun integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4147,11 +4339,14 @@ upsun integrations [-t|--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4320,11 +4515,14 @@ upsun integration:update [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BI
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4372,11 +4570,14 @@ repository may be deleted.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4406,11 +4607,14 @@ upsun dir [<subdir>]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4474,11 +4678,14 @@ upsun metrics [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4556,11 +4763,14 @@ upsun cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4627,11 +4837,14 @@ upsun disk [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4695,11 +4908,14 @@ upsun mem [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4761,11 +4977,14 @@ upsun mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-p
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4820,11 +5039,14 @@ upsun mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--n
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4880,11 +5102,14 @@ upsun mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EX
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4933,11 +5158,14 @@ upsun ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--a
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -4983,11 +5211,14 @@ upsun operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5022,7 +5253,7 @@ upsun organization:billing:address [-o|--org ORG] [-p|--project PROJECT] [--date
   The organization name (or ID)
 
 * `--project` (`-p`) (expects a value)
-  The project ID or URL, to auto-select the organization if --org is not used
+  The project ID or URL, which auto-selects the organization if --org is not used
 
 * `--date-fmt` (expects a value)
   The date format (as a PHP date format string)
@@ -5039,11 +5270,14 @@ upsun organization:billing:address [-o|--org ORG] [-p|--project PROJECT] [--date
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5075,7 +5309,7 @@ upsun organization:billing:profile [-o|--org ORG] [-p|--project PROJECT] [--date
   The organization name (or ID)
 
 * `--project` (`-p`) (expects a value)
-  The project ID or URL, to auto-select the organization if --org is not used
+  The project ID or URL, which auto-selects the organization if --org is not used
 
 * `--date-fmt` (expects a value)
   The date format (as a PHP date format string)
@@ -5092,11 +5326,14 @@ upsun organization:billing:profile [-o|--org ORG] [-p|--project PROJECT] [--date
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5134,11 +5371,14 @@ Access to individual projects (API and SSH) is managed separately, for now.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5162,16 +5402,19 @@ upsun organization:delete [-o|--org ORG] [-p|--project PROJECT]
   The organization name (or ID)
 
 * `--project` (`-p`) (expects a value)
-  The project ID or URL, to auto-select the organization if --org is not used
+  The project ID or URL, which auto-selects the organization if --org is not used
 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5203,7 +5446,7 @@ upsun organization:info [-o|--org ORG] [-p|--project PROJECT] [--date-fmt DATE-F
   The organization name (or ID)
 
 * `--project` (`-p`) (expects a value)
-  The project ID or URL, to auto-select the organization if --org is not used
+  The project ID or URL, which auto-selects the organization if --org is not used
 
 * `--date-fmt` (expects a value)
   The date format (as a PHP date format string)
@@ -5220,11 +5463,14 @@ upsun organization:info [-o|--org ORG] [-p|--project PROJECT] [--date-fmt DATE-F
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5284,11 +5530,14 @@ upsun orgs [--my] [--sort SORT] [--reverse] [--format FORMAT] [-c|--columns COLU
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5320,7 +5569,7 @@ upsun org:subs [--page PAGE] [-c|--count COUNT] [-o|--org ORG] [-p|--project PRO
   The organization name (or ID)
 
 * `--project` (`-p`) (expects a value)
-  The project ID or URL, to auto-select the organization if --org is not used
+  The project ID or URL, which auto-selects the organization if --org is not used
 
 * `--format` (expects a value)
   The output format: table, csv, tsv, or plain
@@ -5334,11 +5583,14 @@ upsun org:subs [--page PAGE] [-c|--count COUNT] [-o|--org ORG] [-p|--project PRO
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5372,11 +5624,14 @@ upsun organization:user:add [-o|--org ORG] [--permission PERMISSION] [--] [<emai
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5407,11 +5662,14 @@ upsun organization:user:delete [-o|--org ORG] [--] <email>
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5457,11 +5715,14 @@ upsun organization:user:get [-o|--org ORG] [-P|--property PROPERTY] [--date-fmt 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5510,11 +5771,14 @@ upsun org:users [-c|--count COUNT] [--sort SORT] [--reverse] [-o|--org ORG] [--d
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5562,11 +5826,14 @@ upsun oups [-o|--org ORG] [--list-all] [--format FORMAT] [-c|--columns COLUMNS] 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5600,11 +5867,14 @@ upsun organization:user:update [-o|--org ORG] [--permission PERMISSION] [--] [<e
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5630,11 +5900,14 @@ upsun project:clear-build-cache [-p|--project PROJECT]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5699,11 +5972,14 @@ to STDERR.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5734,11 +6010,14 @@ upsun project:delete [-p|--project PROJECT] [--] [<project>]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5780,11 +6059,14 @@ upsun get [-e|--environment ENVIRONMENT] [--depth DEPTH] [-p|--project PROJECT] 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5846,11 +6128,14 @@ upsun project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--col
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -5970,11 +6255,14 @@ upsun projects [--pipe] [--region REGION] [--title TITLE] [--my] [--refresh REFR
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6004,11 +6292,14 @@ upsun set-remote [<project>]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6057,11 +6348,14 @@ upsun repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENV
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6071,9 +6365,9 @@ upsun repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENV
 
 ### Examples
 
-* Read the configuration file:
+* Read the services configuration file:
 ```
-upsun repo:cat .upsun/config.yaml
+upsun repo:cat .upsun/services.yaml
 ```
 
 ## `repo:ls`
@@ -6114,11 +6408,14 @@ upsun repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6157,11 +6454,14 @@ upsun read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRON
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6198,11 +6498,14 @@ upsun build-resources:get [-p|--project PROJECT] [--format FORMAT] [-c|--columns
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6236,11 +6539,14 @@ upsun build-resources:set [--cpu CPU] [--memory MEMORY] [-p|--project PROJECT]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6292,11 +6598,14 @@ upsun resources [-s|--service SERVICE] [--app APP] [--worker WORKER] [--type TYP
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6354,11 +6663,14 @@ If the same service and resource is specified on the command line multiple times
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6431,11 +6743,14 @@ upsun resources:sizes [-s|--service SERVICE] [--profile PROFILE] [-p|--project P
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6490,11 +6805,14 @@ upsun route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [-
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6549,11 +6867,14 @@ upsun routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6599,11 +6920,14 @@ upsun services [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENV
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6649,11 +6973,14 @@ upsun mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--rel
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6702,11 +7029,14 @@ upsun mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|-
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6753,11 +7083,14 @@ upsun mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6797,11 +7130,14 @@ upsun mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-p|--project PROJECT
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6850,11 +7186,14 @@ upsun redis [-r|--relationship RELATIONSHIP] [-p|--project PROJECT] [-e|--enviro
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6924,11 +7263,14 @@ upsun source-ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -6971,11 +7313,14 @@ upsun source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--en
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7019,7 +7364,7 @@ explicitly. For unattended scripts, remember to turn off interaction via
 #### Options
 
 * `--refresh-only`
-  Only refresh the certificate, if necessary (do not write SSH config)
+  Only refresh the certificate, if necessary (do not write SSH config). Unless verbose mode is used, this will not output messages.
 
 * `--new`
   Force the certificate to be refreshed
@@ -7030,11 +7375,14 @@ explicitly. For unattended scripts, remember to turn off interaction via
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7073,11 +7421,14 @@ To load or check your SSH certificate, run: upsun ssh-cert:load
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7113,11 +7464,14 @@ To load or check your SSH certificate, run: upsun ssh-cert:load
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7166,11 +7520,14 @@ To load or check your SSH certificate, run: upsun ssh-cert:load
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7219,11 +7576,14 @@ upsun subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7278,11 +7638,14 @@ upsun team:create [--label LABEL] [--no-check-unique] [-r|--role ROLE] [--output
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7311,11 +7674,14 @@ upsun team:delete [-o|--org ORG] [-t|--team TEAM]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7339,7 +7705,7 @@ upsun team:get [-o|--org ORG] [-p|--project PROJECT] [-t|--team TEAM] [-P|--prop
   The organization name (or ID)
 
 * `--project` (`-p`) (expects a value)
-  The project ID or URL, to auto-select the organization if --org is not used
+  The project ID or URL, which auto-selects the organization if --org is not used
 
 * `--team` (`-t`) (expects a value)
   The team ID
@@ -7362,11 +7728,14 @@ upsun team:get [-o|--org ORG] [-p|--project PROJECT] [-t|--team TEAM] [-P|--prop
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7383,7 +7752,7 @@ Aliases: `teams`
 ### Usage
 
 ```
-upsun teams [-c|--count COUNT] [--sort SORT] [--reverse] [-o|--org ORG] [-p|--project PROJECT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+upsun teams [-c|--count COUNT] [--sort SORT] [--reverse] [-A|--all] [-o|--org ORG] [-p|--project PROJECT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
 #### Options
@@ -7397,11 +7766,14 @@ upsun teams [-c|--count COUNT] [--sort SORT] [--reverse] [-o|--org ORG] [-p|--pr
 * `--reverse`
   Sort in reverse order
 
+* `--all` (`-A`)
+  List all teams in the organization (regardless of a selected project)
+
 * `--org` (`-o`) (expects a value)
   The organization name (or ID)
 
 * `--project` (`-p`) (expects a value)
-  The project ID or URL, to auto-select the organization if --org is not used
+  The project ID or URL, which auto-selects the organization if --org is not used
 
 * `--date-fmt` (expects a value)
   The date format (as a PHP date format string)
@@ -7410,7 +7782,7 @@ upsun teams [-c|--count COUNT] [--sort SORT] [--reverse] [-o|--org ORG] [-p|--pr
   The output format: table, csv, tsv, or plain
 
 * `--columns` (expects a value)
-  Columns to display. Available columns: id*, label*, member_count*, project_count*, project_permissions*, created_at, updated_at (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
+  Columns to display. Available columns: id*, label*, member_count*, project_count*, project_permissions*, created_at, granted_at, updated_at (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
 
 * `--no-header`
   Do not output the table header
@@ -7418,17 +7790,37 @@ upsun teams [-c|--count COUNT] [--sort SORT] [--reverse] [-o|--org ORG] [-p|--pr
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
 
 * `--no-interaction`
   Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: UPSUN_CLI_NO_INTERACTION=1
+
+### Examples
+
+* List teams (in the current project, if any):
+```
+upsun team:list 
+```
+
+* List all teams in an organization:
+```
+upsun team:list --all
+```
+
+* List teams with access to a specified project, including when they were added:
+```
+upsun team:list --project myProjectId --columns +granted_at
+```
 
 ## `team:project:add`
 
@@ -7459,11 +7851,14 @@ upsun team:project:add [--all] [-o|--org ORG] [-t|--team TEAM] [--] [<projects>]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7497,11 +7892,14 @@ upsun team:project:delete [-o|--org ORG] [-t|--team TEAM] [--] [<project>]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7547,11 +7945,14 @@ upsun team:projects [-c|--count COUNT] [-o|--org ORG] [-t|--team TEAM] [--date-f
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7595,11 +7996,14 @@ upsun team:update [--label LABEL] [--no-check-unique] [-r|--role ROLE] [-t|--tea
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7633,11 +8037,14 @@ upsun team:user:add [-o|--org ORG] [-t|--team TEAM] [--] [<user>]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7671,11 +8078,14 @@ upsun team:user:delete [-o|--org ORG] [-t|--team TEAM] [--] [<user>]
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7721,11 +8131,14 @@ upsun team:users [-c|--count COUNT] [-o|--org ORG] [-t|--team TEAM] [--date-fmt 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7760,11 +8173,14 @@ upsun tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONME
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7802,11 +8218,14 @@ upsun tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] 
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7852,11 +8271,14 @@ upsun tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7902,11 +8324,14 @@ extensions.
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7947,11 +8372,14 @@ upsun tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -7994,11 +8422,14 @@ upsun user:add [-r|--role ROLE] [--force-invite] [-p|--project PROJECT] [-W|--no
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8052,11 +8483,14 @@ upsun user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8112,11 +8546,14 @@ upsun user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environm
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8165,11 +8602,14 @@ upsun users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8209,11 +8649,14 @@ upsun user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8298,11 +8741,14 @@ upsun variable:create [-u|--update] [-l|--level LEVEL] [--name NAME] [--value VA
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8345,11 +8791,14 @@ upsun variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environmen
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8410,11 +8859,14 @@ upsun vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--c
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8464,11 +8916,14 @@ upsun variables [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--n
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8535,11 +8990,14 @@ upsun variable:update [--allow-no-change] [-l|--level LEVEL] [--value VALUE] [--
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
@@ -8585,11 +9043,14 @@ upsun workers [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVI
 * `--help` (`-h`)
   Display this help message
 
+* `--version` (`-V`)
+  Display this application version
+
 * `--verbose` (`-v|-vv|-vvv`)
   Increase the verbosity of messages
 
-* `--version` (`-V`)
-  Display this application version
+* `--quiet` (`-q`)
+  Only print necessary output; suppress other messages and errors. This implies --no-interaction. It is ignored in verbose mode.
 
 * `--yes` (`-y`)
   Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
